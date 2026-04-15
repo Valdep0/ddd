@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MasterPolDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="employee_id" />
+    </Key>
+    <Property Name="employee_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="full_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="position" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="passport" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hire_date" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Employees__user___4AB81AF0" FromRole="Employees" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Materials">
+    <Key>
+      <PropertyRef Name="material_id" />
+    </Key>
+    <Property Name="material_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="material_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="material_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="defect_rate" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="stock_quantity" Type="Decimal" Precision="15" Scale="2" />
+    <NavigationProperty Name="MaterialSupplies" Relationship="Self.FK__MaterialS__mater__5EBF139D" FromRole="Materials" ToRole="MaterialSupplies" />
+    <NavigationProperty Name="Production" Relationship="Self.FK__Productio__mater__656C112C" FromRole="Materials" ToRole="Production" />
+  </EntityType>
+  <EntityType Name="MaterialSupplies">
+    <Key>
+      <PropertyRef Name="supply_id" />
+    </Key>
+    <Property Name="supply_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="supplier_id" Type="Int32" Nullable="false" />
+    <Property Name="material_id" Type="Int32" Nullable="false" />
+    <Property Name="supply_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="quantity" Type="Decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="price" Type="Decimal" Precision="15" Scale="2" />
+    <NavigationProperty Name="Materials" Relationship="Self.FK__MaterialS__mater__5EBF139D" FromRole="MaterialSupplies" ToRole="Materials" />
+    <NavigationProperty Name="Suppliers" Relationship="Self.FK__MaterialS__suppl__5DCAEF64" FromRole="MaterialSupplies" ToRole="Suppliers" />
+  </EntityType>
+  <EntityType Name="OrderItems">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="order_id" Type="Int32" Nullable="false" />
+    <Property Name="product_id" Type="Int32" Nullable="false" />
+    <Property Name="quantity" Type="Decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="price" Type="Decimal" Precision="15" Scale="2" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__OrderItem__order__571DF1D5" FromRole="OrderItems" ToRole="Orders" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__OrderItem__produ__5812160E" FromRole="OrderItems" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="order_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="partner_id" Type="Int32" Nullable="false" />
+    <Property Name="created_by_user" Type="Int32" Nullable="false" />
+    <Property Name="order_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="prepayment" Type="Boolean" />
+    <NavigationProperty Name="OrderItems" Relationship="Self.FK__OrderItem__order__571DF1D5" FromRole="Orders" ToRole="OrderItems" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Orders__created___5441852A" FromRole="Orders" ToRole="Users" />
+    <NavigationProperty Name="Partners" Relationship="Self.FK__Orders__partner___534D60F1" FromRole="Orders" ToRole="Partners" />
+    <NavigationProperty Name="Production" Relationship="Self.FK__Productio__order__628FA481" FromRole="Orders" ToRole="Production" />
+  </EntityType>
+  <EntityType Name="Partners">
+    <Key>
+      <PropertyRef Name="partner_id" />
+    </Key>
+    <Property Name="partner_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="partner_type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="director" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="legal_address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="inn" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="rating" Type="Int32" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__partner___534D60F1" FromRole="Partners" ToRole="Orders" />
+    <NavigationProperty Name="Sales" Relationship="Self.FK__Sales__partner_i__44FF419A" FromRole="Partners" ToRole="Sales" />
+  </EntityType>
+  <EntityType Name="Production">
+    <Key>
+      <PropertyRef Name="production_id" />
+    </Key>
+    <Property Name="production_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="order_id" Type="Int32" Nullable="false" />
+    <Property Name="product_id" Type="Int32" Nullable="false" />
+    <Property Name="master_user_id" Type="Int32" Nullable="false" />
+    <Property Name="material_id" Type="Int32" Nullable="false" />
+    <Property Name="start_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="end_date" Type="DateTime" Precision="0" />
+    <Property Name="quantity_produced" Type="Decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Materials" Relationship="Self.FK__Productio__mater__656C112C" FromRole="Production" ToRole="Materials" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Productio__order__628FA481" FromRole="Production" ToRole="Orders" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Productio__maste__6477ECF3" FromRole="Production" ToRole="Users" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Productio__produ__6383C8BA" FromRole="Production" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="product_id" />
+    </Key>
+    <Property Name="product_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="product_name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="product_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="coefficient" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OrderItems" Relationship="Self.FK__OrderItem__produ__5812160E" FromRole="Products" ToRole="OrderItems" />
+    <NavigationProperty Name="Production" Relationship="Self.FK__Productio__produ__6383C8BA" FromRole="Products" ToRole="Production" />
+    <NavigationProperty Name="Sales" Relationship="Self.FK__Sales__product_i__440B1D61" FromRole="Products" ToRole="Sales" />
+  </EntityType>
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="sale_id" />
+    </Key>
+    <Property Name="sale_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="product_id" Type="Int32" Nullable="false" />
+    <Property Name="partner_id" Type="Int32" Nullable="false" />
+    <Property Name="quantity" Type="Decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="sale_date" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Partners" Relationship="Self.FK__Sales__partner_i__44FF419A" FromRole="Sales" ToRole="Partners" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Sales__product_i__440B1D61" FromRole="Sales" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="supplier_id" />
+    </Key>
+    <Property Name="supplier_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="supplier_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inn" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="MaterialSupplies" Relationship="Self.FK__MaterialS__suppl__5DCAEF64" FromRole="Suppliers" ToRole="MaterialSupplies" />
+  </EntityType>
+  <EntityType Name="UserActions">
+    <Key>
+      <PropertyRef Name="action_id" />
+    </Key>
+    <Property Name="action_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="action_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="action_description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="action_time" Type="DateTime" Precision="3" />
+    <Property Name="ip_address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__UserActio__user___693CA210" FromRole="UserActions" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="role" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="is_active" Type="Boolean" />
+    <Property Name="created_date" Type="DateTime" Precision="3" />
+    <Property Name="last_login" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK__Employees__user___4AB81AF0" FromRole="Users" ToRole="Employees" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__created___5441852A" FromRole="Users" ToRole="Orders" />
+    <NavigationProperty Name="Production" Relationship="Self.FK__Productio__maste__6477ECF3" FromRole="Users" ToRole="Production" />
+    <NavigationProperty Name="UserActions" Relationship="Self.FK__UserActio__user___693CA210" FromRole="Users" ToRole="UserActions" />
+    <Property Name="password_hash" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK__Employees__user___4AB81AF0">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MaterialS__mater__5EBF139D">
+    <End Role="Materials" Type="Self.Materials" Multiplicity="1" />
+    <End Role="MaterialSupplies" Type="Self.MaterialSupplies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materials">
+        <PropertyRef Name="material_id" />
+      </Principal>
+      <Dependent Role="MaterialSupplies">
+        <PropertyRef Name="material_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Productio__mater__656C112C">
+    <End Role="Materials" Type="Self.Materials" Multiplicity="1" />
+    <End Role="Production" Type="Self.Production" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materials">
+        <PropertyRef Name="material_id" />
+      </Principal>
+      <Dependent Role="Production">
+        <PropertyRef Name="material_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MaterialS__suppl__5DCAEF64">
+    <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="1" />
+    <End Role="MaterialSupplies" Type="Self.MaterialSupplies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="supplier_id" />
+      </Principal>
+      <Dependent Role="MaterialSupplies">
+        <PropertyRef Name="supplier_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderItem__order__571DF1D5">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="OrderItems" Type="Self.OrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="order_id" />
+      </Principal>
+      <Dependent Role="OrderItems">
+        <PropertyRef Name="order_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderItem__produ__5812160E">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="OrderItems" Type="Self.OrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="product_id" />
+      </Principal>
+      <Dependent Role="OrderItems">
+        <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__created___5441852A">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="created_by_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__partner___534D60F1">
+    <End Role="Partners" Type="Self.Partners" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Partners">
+        <PropertyRef Name="partner_id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="partner_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Productio__order__628FA481">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="Production" Type="Self.Production" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="order_id" />
+      </Principal>
+      <Dependent Role="Production">
+        <PropertyRef Name="order_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sales__partner_i__44FF419A">
+    <End Role="Partners" Type="Self.Partners" Multiplicity="1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Partners">
+        <PropertyRef Name="partner_id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="partner_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Productio__maste__6477ECF3">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Production" Type="Self.Production" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="Production">
+        <PropertyRef Name="master_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Productio__produ__6383C8BA">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="Production" Type="Self.Production" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="product_id" />
+      </Principal>
+      <Dependent Role="Production">
+        <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sales__product_i__440B1D61">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="product_id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserActio__user___693CA210">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserActions" Type="Self.UserActions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="UserActions">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MasterPolDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employees" EntityType="Self.Employees" />
+    <EntitySet Name="Materials" EntityType="Self.Materials" />
+    <EntitySet Name="MaterialSupplies" EntityType="Self.MaterialSupplies" />
+    <EntitySet Name="OrderItems" EntityType="Self.OrderItems" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" />
+    <EntitySet Name="Partners" EntityType="Self.Partners" />
+    <EntitySet Name="Production" EntityType="Self.Production" />
+    <EntitySet Name="Products" EntityType="Self.Products" />
+    <EntitySet Name="Sales" EntityType="Self.Sales" />
+    <EntitySet Name="Suppliers" EntityType="Self.Suppliers" />
+    <EntitySet Name="UserActions" EntityType="Self.UserActions" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK__Employees__user___4AB81AF0" Association="Self.FK__Employees__user___4AB81AF0">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MaterialS__mater__5EBF139D" Association="Self.FK__MaterialS__mater__5EBF139D">
+      <End Role="Materials" EntitySet="Materials" />
+      <End Role="MaterialSupplies" EntitySet="MaterialSupplies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Productio__mater__656C112C" Association="Self.FK__Productio__mater__656C112C">
+      <End Role="Materials" EntitySet="Materials" />
+      <End Role="Production" EntitySet="Production" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MaterialS__suppl__5DCAEF64" Association="Self.FK__MaterialS__suppl__5DCAEF64">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="MaterialSupplies" EntitySet="MaterialSupplies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderItem__order__571DF1D5" Association="Self.FK__OrderItem__order__571DF1D5">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderItems" EntitySet="OrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderItem__produ__5812160E" Association="Self.FK__OrderItem__produ__5812160E">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="OrderItems" EntitySet="OrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__created___5441852A" Association="Self.FK__Orders__created___5441852A">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__partner___534D60F1" Association="Self.FK__Orders__partner___534D60F1">
+      <End Role="Partners" EntitySet="Partners" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Productio__order__628FA481" Association="Self.FK__Productio__order__628FA481">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Production" EntitySet="Production" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sales__partner_i__44FF419A" Association="Self.FK__Sales__partner_i__44FF419A">
+      <End Role="Partners" EntitySet="Partners" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Productio__maste__6477ECF3" Association="Self.FK__Productio__maste__6477ECF3">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Production" EntitySet="Production" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Productio__produ__6383C8BA" Association="Self.FK__Productio__produ__6383C8BA">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Production" EntitySet="Production" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sales__product_i__440B1D61" Association="Self.FK__Sales__product_i__440B1D61">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserActio__user___693CA210" Association="Self.FK__UserActio__user___693CA210">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserActions" EntitySet="UserActions" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

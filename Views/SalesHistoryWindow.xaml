@@ -1,0 +1,75 @@
+﻿<Window x:Class="MasterPolApp.Views.SalesHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="История продаж" Height="550" Width="900"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Background="#F4E8D3">
+        <Border Background="#FFFFFF" CornerRadius="15" Margin="20" Padding="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Заголовок -->
+                <TextBlock Grid.Row="0" x:Name="TitleText" Text="История продаж" 
+                           FontSize="22" FontWeight="SemiBold" Foreground="#333333"/>
+
+                <!-- Информация о партнере -->
+                <Border Grid.Row="1" Background="#F4E8D3" CornerRadius="10" Padding="15" Margin="0,15">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel>
+                            <TextBlock x:Name="txtPartnerName" FontSize="16" FontWeight="SemiBold" Foreground="#333333"/>
+                            <TextBlock x:Name="txtPartnerInfo" FontSize="13" Foreground="#666666" Margin="0,5,0,0"/>
+                        </StackPanel>
+
+                        <Border Grid.Column="1" Background="#67BA80" CornerRadius="15" Padding="15,8" VerticalAlignment="Center">
+                            <StackPanel>
+                                <TextBlock x:Name="txtTotalSales" FontSize="14" FontWeight="Bold" Foreground="White"/>
+                                <TextBlock x:Name="txtDiscount" FontSize="12" Foreground="#E8F8F0"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Border>
+
+                <!-- Фильтры по дате -->
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,0,15">
+                    <TextBlock Text="Период:" FontSize="13" Foreground="#666666" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                    <ComboBox x:Name="cmbPeriod" Width="150" Height="30" SelectionChanged="Period_Changed">
+                        <ComboBoxItem Content="Все время" IsSelected="True"/>
+                        <ComboBoxItem Content="Последний месяц"/>
+                        <ComboBoxItem Content="Последний квартал"/>
+                        <ComboBoxItem Content="Последний год"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Таблица продаж -->
+                <DataGrid x:Name="dgSales" Grid.Row="3" AutoGenerateColumns="False" IsReadOnly="True"
+                          AlternatingRowBackground="#F4E8D3" FontSize="13">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Дата" Width="100" Binding="{Binding sale_date, StringFormat='dd.MM.yyyy'}"/>
+                        <DataGridTextColumn Header="Продукция" Width="300" Binding="{Binding Product.product_name}"/>
+                        <DataGridTextColumn Header="Тип продукции" Width="150" Binding="{Binding Product.product_type}"/>
+                        <DataGridTextColumn Header="Артикул" Width="100" Binding="{Binding Product.article}"/>
+                        <DataGridTextColumn Header="Количество, м²" Width="130" Binding="{Binding quantity, StringFormat='N0'}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Right"/>
+                                    <Setter Property="FontWeight" Value="SemiBold"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

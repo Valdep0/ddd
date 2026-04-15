@@ -1,0 +1,39 @@
+﻿<Page x:Class="MasterPolApp.Views.ProductsWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Продукция" Background="#FFFFFF">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Каталог продукции" FontSize="22" FontWeight="SemiBold" Foreground="#333333"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,15,0,15">
+            <Button Content="+ Добавить продукцию" Click="AddProduct_Click"
+                    Width="150" Height="35" Background="#67BA80" Foreground="White" 
+                    BorderThickness="0" Cursor="Hand">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
+
+        <DataGrid x:Name="dgProducts" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True"
+                  AlternatingRowBackground="#F4E8D3" FontSize="13">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Артикул" Width="100" Binding="{Binding article}"/>
+                <DataGridTextColumn Header="Наименование" Width="300" Binding="{Binding product_name}"/>
+                <DataGridTextColumn Header="Тип" Width="150" Binding="{Binding product_type}"/>
+                <DataGridTextColumn Header="Коэффициент" Width="100" Binding="{Binding coefficient}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

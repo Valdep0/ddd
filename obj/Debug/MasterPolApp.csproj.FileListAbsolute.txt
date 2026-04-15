@@ -1,0 +1,128 @@
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.exe.config
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.exe
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.pdb
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\bin\Debug\EntityFramework.dll
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\bin\Debug\EntityFramework.xml
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.AssemblyReference.cache
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\Styles\Styles.baml
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\Views\LoginWindow.baml
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\Views\MainWindow.baml
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnerEditWindow.baml
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnersListWindow.baml
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\Views\SalesHistoryWindow.baml
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\App.baml
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\Views\LoginWindow.g.cs
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\Views\MainWindow.g.cs
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnerEditWindow.g.cs
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnersListWindow.g.cs
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\Views\SalesHistoryWindow.g.cs
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\App.g.cs
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp_Content.g.cs
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp_MarkupCompile.cache
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.g.resources
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.Properties.Resources.resources
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.GenerateResource.cache
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.CoreCompileInputs.cache
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\MasterPo.FF4A49A3.Up2Date
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.exe
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.pdb
+C:\Users\sokol\source\repos\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.exe.config
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.exe.config
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.exe
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.pdb
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\EntityFramework.dll
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\EntityFramework.xml
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\ru\EntityFramework.resources.dll
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.AssemblyReference.cache
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Styles\Styles.baml
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\LoginWindow.baml
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\MainWindow.baml
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnerEditWindow.baml
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnersListWindow.baml
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\SalesHistoryWindow.baml
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\App.baml
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\LoginWindow.g.cs
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\MainWindow.g.cs
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnerEditWindow.g.cs
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnersListWindow.g.cs
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\SalesHistoryWindow.g.cs
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\App.g.cs
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp_Content.g.cs
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp_MarkupCompile.cache
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.g.resources
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.Properties.Resources.resources
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.GenerateResource.cache
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.CoreCompileInputs.cache
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPo.FF4A49A3.Up2Date
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.exe
+S:\301В\Соколов Никита 301в\ПП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.pdb
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.exe.config
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.exe
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.pdb
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\EntityFramework.dll
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\EntityFramework.xml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\bin\Debug\ru\EntityFramework.resources.dll
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.AssemblyReference.cache
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Styles\Styles.baml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\LoginWindow.baml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\MainWindow.baml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnerEditWindow.baml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnersListWindow.baml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\SalesHistoryWindow.baml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\App.baml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\LoginWindow.g.cs
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\MainWindow.g.cs
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnerEditWindow.g.cs
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnersListWindow.g.cs
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\SalesHistoryWindow.g.cs
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\App.g.cs
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp_Content.g.cs
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp_MarkupCompile.cache
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.g.resources
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.Properties.Resources.resources
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.GenerateResource.cache
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.CoreCompileInputs.cache
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPo.FF4A49A3.Up2Date
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.exe
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.pdb
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.AssemblyReference.cache
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.exe.config
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Styles\Styles.baml
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\LoginWindow.baml
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\MainWindow.baml
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnerEditWindow.baml
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnersListWindow.baml
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\ProductsWindow.baml
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\SalesHistoryWindow.baml
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\App.baml
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\LoginWindow.g.cs
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\MainWindow.g.cs
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnerEditWindow.g.cs
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\PartnersListWindow.g.cs
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\ProductsWindow.g.cs
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Views\SalesHistoryWindow.g.cs
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\App.g.cs
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp_Content.g.cs
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp_MarkupCompile.cache
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.g.resources
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.Properties.Resources.resources
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.GenerateResource.cache
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.csproj.CoreCompileInputs.cache
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.exe
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.pdb
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.exe.config
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.exe
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\bin\Debug\MasterPolApp.pdb
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\bin\Debug\EntityFramework.dll
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\bin\Debug\EntityFramework.xml
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\sokol\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPo.FF4A49A3.Up2Date
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\ProductsWindow.baml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\ProductsWindow.g.cs
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\EmployeesWindow.baml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\MaterialsWindow.baml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\ProductionWindow.baml
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\EmployeesWindow.g.cs
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\MaterialsWindow.g.cs
+S:\301В\Соколов Никита 301в\УП ПМ01\Задание 4\MasterPolApp\MasterPolApp\obj\Debug\Views\ProductionWindow.g.cs

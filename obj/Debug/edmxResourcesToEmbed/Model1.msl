@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище MasterPolDBModelContainer" CdmEntityContainer="MasterPolDBEntities">
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="MasterPolDBModel.Employees">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="full_name" ColumnName="full_name" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="passport" ColumnName="passport" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="hire_date" ColumnName="hire_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materials">
+      <EntityTypeMapping TypeName="MasterPolDBModel.Materials">
+        <MappingFragment StoreEntitySet="Materials">
+          <ScalarProperty Name="material_id" ColumnName="material_id" />
+          <ScalarProperty Name="material_name" ColumnName="material_name" />
+          <ScalarProperty Name="material_type" ColumnName="material_type" />
+          <ScalarProperty Name="defect_rate" ColumnName="defect_rate" />
+          <ScalarProperty Name="stock_quantity" ColumnName="stock_quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialSupplies">
+      <EntityTypeMapping TypeName="MasterPolDBModel.MaterialSupplies">
+        <MappingFragment StoreEntitySet="MaterialSupplies">
+          <ScalarProperty Name="supply_id" ColumnName="supply_id" />
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="material_id" ColumnName="material_id" />
+          <ScalarProperty Name="supply_date" ColumnName="supply_date" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderItems">
+      <EntityTypeMapping TypeName="MasterPolDBModel.OrderItems">
+        <MappingFragment StoreEntitySet="OrderItems">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="MasterPolDBModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+          <ScalarProperty Name="created_by_user" ColumnName="created_by_user" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="prepayment" ColumnName="prepayment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partners">
+      <EntityTypeMapping TypeName="MasterPolDBModel.Partners">
+        <MappingFragment StoreEntitySet="Partners">
+          <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+          <ScalarProperty Name="partner_type" ColumnName="partner_type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="director" ColumnName="director" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="legal_address" ColumnName="legal_address" />
+          <ScalarProperty Name="inn" ColumnName="inn" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Production">
+      <EntityTypeMapping TypeName="MasterPolDBModel.Production">
+        <MappingFragment StoreEntitySet="Production">
+          <ScalarProperty Name="production_id" ColumnName="production_id" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="master_user_id" ColumnName="master_user_id" />
+          <ScalarProperty Name="material_id" ColumnName="material_id" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="quantity_produced" ColumnName="quantity_produced" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="MasterPolDBModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="product_type" ColumnName="product_type" />
+          <ScalarProperty Name="coefficient" ColumnName="coefficient" />
+          <ScalarProperty Name="article" ColumnName="article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="MasterPolDBModel.Sales">
+        <MappingFragment StoreEntitySet="Sales">
+          <ScalarProperty Name="sale_id" ColumnName="sale_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="partner_id" ColumnName="partner_id" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="sale_date" ColumnName="sale_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="MasterPolDBModel.Suppliers">
+        <MappingFragment StoreEntitySet="Suppliers">
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="supplier_name" ColumnName="supplier_name" />
+          <ScalarProperty Name="inn" ColumnName="inn" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserActions">
+      <EntityTypeMapping TypeName="MasterPolDBModel.UserActions">
+        <MappingFragment StoreEntitySet="UserActions">
+          <ScalarProperty Name="action_id" ColumnName="action_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="action_type" ColumnName="action_type" />
+          <ScalarProperty Name="action_description" ColumnName="action_description" />
+          <ScalarProperty Name="action_time" ColumnName="action_time" />
+          <ScalarProperty Name="ip_address" ColumnName="ip_address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="MasterPolDBModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="password_hash" ColumnName="password_hash" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="created_date" ColumnName="created_date" />
+          <ScalarProperty Name="last_login" ColumnName="last_login" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
